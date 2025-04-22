@@ -1,0 +1,61 @@
+.appspring-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.choices__inner {
+    min-width: 200px;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#stateFilter {
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.appspring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.provider-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.provider-card:hover {
+    transform: scale(1.02);
+}
+
+.provider-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 480px) {
+    .filter-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .appspring-container {
+        padding: 1rem;
+    }
+}

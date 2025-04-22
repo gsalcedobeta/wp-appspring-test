@@ -1,0 +1,68 @@
+/* Contenedor del filtro */
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Dropdown estilo Choices */
+  .choices__inner {
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+  }
+  
+  .choices__list--dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .choices__item--selectable {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  /* Tarjetas de proveedor */
+  .provider-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .provider-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .provider-card img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Burbujas de tags */
+  .appspring-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    color: #333;
+    margin: 0.25rem;
+  }
+  
+  .appspring-tag .remove {
+    margin-left: 8px;
+    cursor: not-allowed;
+    color: #999;
+  }
+  
